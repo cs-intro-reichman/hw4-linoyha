@@ -29,14 +29,15 @@ public class Primes {
         
         System.out.println("Prime numbers up to "+N+":");
         int count = 0;
-            for (int i=0; i < isprime.length; i++) {
+            for (int i = 0; i < isprime.length; i++) {
                 if (isprime[i]) {
-                    System.out.println(i);
                     count++;
+                    System.out.println(i); 
                 }
             }
+            double precent = ((double)count / (double)N) * 100;
 
-            System.out.println("There are " +count + " primes between 2 and "+N+" ("+(count/N)*100+"% are primes)");
+        System.out.println("There are " +count + " primes between 2 and "+N+" ("+(int)precent+"% are primes)");
 
 
     }
